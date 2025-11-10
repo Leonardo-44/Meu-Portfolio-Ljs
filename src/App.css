@@ -1,0 +1,169 @@
+.container {
+  height: 100vh;
+}
+
+.gap {
+  gap: 30px;
+}
+
+/*COLORS*/
+
+.color-primary {
+  color: #fff;
+}
+
+.color-secondary {
+  color: #dedada;
+}
+
+.bg-color {
+  background-color: #ffcc00;
+}
+
+.tertiary-color {
+  color: #ffcc00;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #020046, #060196);
+}
+
+/*CARD CONFIG*/
+
+.card {
+  width: 337px;
+  height: 446px;
+  background-color: #020046;
+  border: 5px #fff solid;
+  border-radius: 15px;
+}
+
+.list-diferenciais {
+  height: 30px;
+  padding: 20px 5px;
+  background-color: #030061;
+  font-weight: bold;
+}
+
+.card-projects {
+  width: 350px;
+  height: 475px;
+  background-color: #020046;
+  border: 2px #fff solid;
+  border-radius: 15px;
+}
+
+/*ATALHOS*/
+
+.d-flex {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-around {
+  justify-content: space-around;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.txt-align {
+  text-align: center;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/*BUTTONS*/
+
+.button-one {
+  border: none;
+  background-color: #ffcc00;
+  color: black;
+}
+
+.button-one:hover {
+  background-color: #010027;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  transition: 0.4s;
+  transform: scale(1.05);
+}
+
+.button-two {
+  background-color: #010027;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+}
+
+.button-two:hover {
+  background-color: #ffcc00;
+  color: #010027;
+  border: 1px solid #fff;
+  transition: 0.4s;
+  transform: scale(1.05);
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: auto;
+    margin: 0 0 15px 0;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    height: auto;
+    margin: 0 0 15px 0;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,150 @@
+.gap-projects{
+    gap: 5%;
+}
+
+.padding-card-projects{
+    padding: 16px;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px ;
+  /* Melhora qualidade */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.h3-margin-16px{
+    margin: 14px 0;
+}
+
+.p-margin-bottom{
+    margin: 0 0 32px 0;
+}
+
+.p-card-projects{
+    margin: 8px 0;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento entre as tags */
+  margin: 10px 0;
+}
+
+.tech-tag {
+  background-color: #dedada; /* Ou a cor que preferir */
+  color: #020046;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/*BUTTONS*/
+
+.btn-project{
+    background-color: rgb(41, 41, 255);
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    transition: 0.3 ease;
+}
+
+.btn-github{
+    background-color: #272727;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    transition: 0.3 ease;
+}
+
+.btn-project:hover,
+.btn-github:hover{
+    filter: brightness(0.9);
+}
+
+.projects-grid {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-projects {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  min-height: 475px;
+  background-color: #020046;
+  border: 2px #fff solid;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* Desktop grande (1200px+) */
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Tablet/Desktop pequeno (768px - 1199px) */
+@media (max-width: 1199px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px 20px;
+  }
+}
+
+/* Tablet (481px - 768px) */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    padding: 25px 15px;
+  }
+}
+
+/* Mobile (até 480px) */
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+}
+
+/* Mobile pequeno (até 360px) */
+@media (max-width: 360px) {
+  .projects-grid {
+    gap: 15px;
+    padding: 15px 5px;
+  }
+}
