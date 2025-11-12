@@ -6,6 +6,7 @@ import ProjectCard from "../Projects/ProjectsCards";
 //assets
 import ArtesManuais from "../../assets/Projects/ArtesManuais.png";
 import BlogResponsividade from "../../assets/Projects/BlogResponsividade.png";
+import Essenza from "../../assets/Projects/Essenza.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -27,6 +28,15 @@ const ProjectsSection = () => {
       link: "https://responsive-blog-project.netlify.app/",
       github: "https://github.com/Leonardo-44/Projeto-responsividade",
     },
+    {
+      title: "Landing Page Loja de Perfumes",
+      description:
+        "Uma landing page elegante e responsiva, desenvolvida para destacar produtos de perfumaria com design moderno, ótima usabilidade e adaptação perfeita a qualquer dispositivo.",
+      image: Essenza,
+      technologies: ["Html", "Css"],
+      link: "https://trabalho-escolar-ochre.vercel.app/",
+      github: "https://github.com/Leonardo-44/Trabalho-Escolar",
+    }
   ];
 
   return (
