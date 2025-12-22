@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../../App.css";
 import "../AboutMe/AboutMe.css";
 
@@ -9,22 +12,39 @@ import Lampada from "../../assets/lampada.png";
 import Experiencia from "../../assets/experience.png";
 
 function AboutMe() {
+  useEffect(() => {
+    AOS.init({
+      duration: 900, // Duração da animação em ms
+      once: true, // Anima apenas um vez
+      offset: 50, // Offset do trigger (em pixels)
+      easing: "ease", // Suave (padrão)
+    });
+  }, []);
+
   return (
     <>
       <section className="container responsive">
-        <h1 className=" d-flex jc-center al-center color-primary">Sobre Mim</h1>
+        <h1
+          className="d-flex jc-center al-center color-primary"
+          data-aos="fade-right"
+          data-aos-delay="0"
+        >
+          Sobre Mim
+        </h1>
 
-        <div className="d-flex margin responsive ">
+        <div className="d-flex margin responsive">
           <img
             src={Personagem}
             width="500px"
             alt="Personagem LJS"
             className="img-responsive"
+            data-aos="fade-right"
+            data-aos-delay="0"
           />
 
           <div className="d-flex fd-column jc-center al-left gap-texts">
-            <div>
-              <div className="d-flex tamanho50 fd-column al-left gap ">
+            <div data-aos="fade-up" data-aos-delay="200">
+              <div className="d-flex tamanho50 fd-column al-left gap">
                 <div className="d-flex al-center jc-center gap">
                   <img
                     className="fundo-icon"
@@ -46,7 +66,7 @@ function AboutMe() {
               </div>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="350">
               <div className="d-flex tamanho50 fd-column gap">
                 <div className="d-flex al-center jc-center gap">
                   <img
@@ -66,7 +86,7 @@ function AboutMe() {
               </div>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="450">
               <div className="d-flex al-left tamanho50 fd-column gap">
                 <div className="d-flex al-center jc-center gap">
                   <img
@@ -78,27 +98,51 @@ function AboutMe() {
                   <h2 className="tertiary-color tittle-about">Diferenciais</h2>
                 </div>
                 <ul className="display-grid-gap responsive-cards">
-                  <li className="list-diferenciais color-primary al-center d-flex gap-diferenciais">
+                  <li
+                    className="list-diferenciais color-primary al-center d-flex gap-diferenciais"
+                    data-aos="fade-left"
+                    data-aos-delay="600"
+                  >
                     <img src={Star} alt="Estrela" width="27px" />
                     Versatilidade técnica
                   </li>
-                  <li className="list-diferenciais color-primary al-center d-flex gap-diferenciais">
+                  <li
+                    className="list-diferenciais color-primary al-center d-flex gap-diferenciais"
+                    data-aos="fade-left"
+                    data-aos-delay="700"
+                  >
                     <img src={Star} alt="Estrela" width="27px" />
                     Foco em resolver problemas reais
                   </li>
-                  <li className="list-diferenciais color-primary al-center d-flex gap-diferenciais">
+                  <li
+                    className="list-diferenciais color-primary al-center d-flex gap-diferenciais"
+                    data-aos="fade-left"
+                    data-aos-delay="800"
+                  >
                     <img src={Star} alt="Estrela" width="27px" />
                     Aprendizado contínuo
                   </li>
-                  <li className="list-diferenciais color-primary al-center d-flex gap-diferenciais">
+                  <li
+                    className="list-diferenciais color-primary al-center d-flex gap-diferenciais"
+                    data-aos="fade-left"
+                    data-aos-delay="900"
+                  >
                     <img src={Star} alt="Estrela" width="27px" />
                     Responsabilidade e comprometimento
                   </li>
-                  <li className="list-diferenciais color-primary al-center d-flex gap-diferenciais">
+                  <li
+                    className="list-diferenciais color-primary al-center d-flex gap-diferenciais"
+                    data-aos="fade-left"
+                    data-aos-delay="1000"
+                  >
                     <img src={Star} alt="Estrela" width="27px" />
                     Visão de produto
                   </li>
-                  <li className="list-diferenciais color-primary al-center d-flex gap-diferenciais">
+                  <li
+                    className="list-diferenciais color-primary al-center d-flex gap-diferenciais"
+                    data-aos="fade-left"
+                    data-aos-delay="1100"
+                  >
                     <img src={Star} alt="Estrela" width="27px" />
                     Ótima comunicação e trabalho em equipe
                   </li>

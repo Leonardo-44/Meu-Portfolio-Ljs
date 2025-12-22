@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../../App.css";
 import "../Tecn/Tecn.css";
 
@@ -23,15 +26,31 @@ import PhotoShop from "../../assets/PHOTOSHOP.png";
 import CorelDraw from "../../assets/CORELDRAW.png";
 
 function Tecn() {
+  useEffect(() => {
+    AOS.init({
+      duration: 900, // Duração da animação em ms
+      once: true, // Anima apenas um vez
+      offset: 50, // Offset do trigger (em pixels)
+      easing: "ease", // Suave (padrão)
+    });
+  }, []);
   return (
     <>
       <section className="container d-flex fd-column jc-center ">
-        <h1 className="color-primary al-center d-flex jc-center ">
+        <h1
+          className="color-primary al-center d-flex jc-center"
+          data-aos="fade-right"
+          data-aos-delay="0"
+        >
           Tecnologia Que Tenho Domínio
         </h1>
 
-        <div className="d-flex jc-center al-items gap-cards">
-          <article className="card d-flex fd-column al-items txt-align">
+        <div className="d-flex jc-center al-items gap-cards alg-center">
+          <article
+            className="card d-flex fd-column al-items txt-align"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <h2 className="tertiary-color tittle-cards">FRONT-END</h2>
             <ul className="al-center color-secondary d-flex fd-column jc-center gap-icons fw-bold">
               <li className="d-flex al-center gap-icons li-anime">
@@ -57,7 +76,11 @@ function Tecn() {
             </ul>
           </article>
 
-          <article className="card d-flex fd-column al-items txt-align">
+          <article
+            className="card d-flex fd-column al-items txt-align"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <h2 className="tertiary-color tittle-cards">BACK-END</h2>
             <ul className="al-center color-secondary d-flex fd-column jc-center gap-icons fw-bold">
               <li className="d-flex al-center gap-icons li-anime">
@@ -80,7 +103,11 @@ function Tecn() {
             </ul>
           </article>
 
-          <article className="card d-flex fd-column al-items txt-align">
+          <article
+            className="card d-flex fd-column al-items txt-align"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <h2 className="tertiary-color tittle-cards">OUTROS</h2>
             <ul className="al-center color-secondary d-flex fd-column jc-center gap-icons fw-bold">
               <li className="d-flex al-center gap-icons li-anime">
@@ -101,9 +128,23 @@ function Tecn() {
           </article>
         </div>
 
-        <div className="d-flex txt-center jc-center al-center fw-bold fd-column">
-          <h3 className="color-primary ">Pronto para Iniciar o seu Projeto?</h3>
-          <button className="button-two fw-bold">Iniciar Projeto</button>
+        <div
+          className="d-flex txt-center jc-center al-center fw-bold fd-column"
+          data-aos="fade-right"
+          data-aos-delay="0"
+        >
+          <h3 className="color-primary">Pronto para Iniciar o seu Projeto?</h3>
+          <button
+            className="button-two fw-bold margin-btn"
+            onClick={() =>
+              window.open(
+                "https://wa.me/5589981397128?text=Olá! Gostaria de iniciar um projeto.",
+                "_blank"
+              )
+            }
+          >
+            Iniciar Projeto
+          </button>
         </div>
       </section>
     </>

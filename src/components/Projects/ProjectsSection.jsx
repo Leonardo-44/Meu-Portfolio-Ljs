@@ -31,17 +31,17 @@ const ProjectsSection = () => {
     {
       title: "Landing Page Loja de Perfumes",
       description:
-        "Uma landing page elegante e responsiva, desenvolvida para destacar produtos de perfumaria com design moderno, ótima usabilidade e adaptação perfeita a qualquer dispositivo.",
+        "Landing page elegante, moderna e responsiva para destacar produtos de perfumaria, com foco em usabilidade.",
       image: Essenza,
       technologies: ["Html", "Css"],
       link: "https://trabalho-escolar-ochre.vercel.app/",
       github: "https://github.com/Leonardo-44/Trabalho-Escolar",
-    }
+    },
   ];
 
   return (
     <section className="d-flex fd-column al-center jc-center">
-      <div className="projects-header">
+      <div className="projects-header" data-aos="fade-right" data-aos-delay="0">
         <h1 className="color-primary txt-center d-flex al-center jc-center">
           Meus Projetos
         </h1>
@@ -51,7 +51,12 @@ const ProjectsSection = () => {
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard
+            key={index}
+            {...project}
+            data-aos="fade-down"
+            data-aos-delay={index * 300}
+          />
         ))}
       </div>
     </section>

@@ -86,8 +86,8 @@
 
 .card-projects {
   width: 100%;
-  max-width: 350px;
   height: auto;
+  max-width: 420px;
   min-height: 475px;
   background-color: #020046;
   border: 2px #fff solid;

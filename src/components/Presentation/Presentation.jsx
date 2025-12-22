@@ -6,6 +6,11 @@ import LogoLJS from "../../../public/logoLJS.png";
 import FacePlayer from "../../../public/personagemFace.png";
 
 function Presentation() {
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <section className="container reverse d-flex al-center jc-space-around">
@@ -23,8 +28,23 @@ function Presentation() {
           </p>
 
           <div className="buttons-margin gap-buttons d-flex">
-            <button className="button-one fw-bold">Iniciar Projetos</button>
-            <button className="button-two fw-bold">Ver Projetos</button>
+            <button
+              className="button-one fw-bold"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/5589981397128?text=Olá! Gostaria de iniciar um projeto.",
+                  "_blank"
+                )
+              }
+            >
+              Iniciar Projetos
+            </button>
+            <button
+              className="button-two fw-bold"
+              onClick={() => scrollTo("projetos")}
+            >
+              Ver Projetos
+            </button>
           </div>
         </div>
 

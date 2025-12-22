@@ -1,5 +1,4 @@
-
-import '../Projects/ProjectsSection.css';
+import "../Projects/ProjectsSection.css";
 
 const ProjectsCard = ({
   title,
@@ -8,10 +7,18 @@ const ProjectsCard = ({
   technologies,
   link,
   github,
+  "data-aos": dataAos,
+  "data-aos-delay": dataAosDelay,
+  "data-aos-duration": dataAosDuration,
 }) => {
   return (
-    <div className="card-projects d-flex jc-center fd-column padding-card-projects">
-      {image && <img src={image} alt={title} className="project-image"/>}
+    <div
+      className="card-projects d-flex jc-center fd-column padding-card-projects"
+      data-aos={dataAos}
+      data-aos-delay={dataAosDelay}
+      data-aos-duration={dataAosDuration}
+    >
+      {image && <img src={image} alt={title} className="project-image" />}
       <h3 className="h3-margin-16px tertiary-color">{title}</h3>
       <p className="color-secondary p-card-projects">{description}</p>
       {technologies && (

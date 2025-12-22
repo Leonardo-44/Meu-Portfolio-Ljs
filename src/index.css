@@ -6,6 +6,7 @@ body {
   padding: 0;
   overflow-x: hidden; /* impede rolagem lateral */
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -15,9 +16,10 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #010024;
+body{
+   background-color: #010024;
 }
+
 
 a {
   text-decoration: none;
@@ -34,7 +36,7 @@ html {
 
 h1 {
   font-size: 36px;
-  margin: 50px 0 50px 0;
+  margin: 30px 0;
 }
 
 button {
