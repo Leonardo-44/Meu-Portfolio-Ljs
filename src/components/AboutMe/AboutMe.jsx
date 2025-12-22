@@ -14,9 +14,9 @@ import Experiencia from "../../assets/experience.png";
 function AboutMe() {
   useEffect(() => {
     AOS.init({
-      duration: 900, // Duração da animação em ms
+      duration: 1000, // Duração da animação em ms
       once: true, // Anima apenas um vez
-      offset: 50, // Offset do trigger (em pixels)
+      offset: 110, // Offset do trigger (em pixels)
       easing: "ease", // Suave (padrão)
     });
   }, []);
