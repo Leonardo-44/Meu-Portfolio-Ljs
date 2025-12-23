@@ -99,9 +99,9 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1400px;
+  gap: 6vw;
+  padding: 10px 20px;
+  max-width: 1480px;
   margin: 0 auto;
   justify-items: center;
 }
@@ -110,7 +110,6 @@
 @media (min-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
   }
 }
 
@@ -118,7 +117,6 @@
 @media (max-width: 1199px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
     padding: 30px 20px;
   }
 }
