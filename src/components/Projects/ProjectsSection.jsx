@@ -40,7 +40,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="d-flex fd-column al-center jc-center">
+    <section id="projetos" className="d-flex fd-column al-center jc-center">
       <div className="projects-header" data-aos="fade-right" data-aos-delay="0">
         <h1 className="color-primary txt-center d-flex al-center jc-center">
           Meus Projetos

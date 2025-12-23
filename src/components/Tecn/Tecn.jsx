@@ -36,7 +36,7 @@ function Tecn() {
   }, []);
   return (
     <>
-      <section className="container d-flex fd-column jc-center ">
+      <section id="tecnologias" className="container d-flex fd-column jc-center ">
         <h1
           className="color-primary al-center d-flex jc-center"
           data-aos="fade-right"

@@ -23,11 +23,12 @@ function AboutMe() {
 
   return (
     <>
-      <section className="container responsive">
+      <section id="about" className="container responsive">
         <h1
           className="d-flex jc-center al-center color-primary"
           data-aos="fade-right"
           data-aos-delay="0"
+          
         >
           Sobre Mim
         </h1>
