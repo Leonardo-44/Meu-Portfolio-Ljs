@@ -24,11 +24,29 @@ function AboutMe() {
   return (
     <>
       <section id="about" className="container responsive">
+
+        {/* ── Glows decorativos ── */}
+        <div className="section-glow section-glow--left" />
+        <div className="section-glow section-glow--right" />
+
+        {/* ── Símbolo decorativo ── */}
+        <div
+          className="d-flex fd-column al-center txt-align about-pill-wrap"
+          data-aos="fade-down"
+          data-aos-delay="0"
+        >
+          <span className="about-pill">👨‍💻 Conheça o Dev</span>
+          <div className="about-header-divider">
+            <span className="about-divider-line" />
+            <span className="about-divider-dot" />
+            <span className="about-divider-line" />
+          </div>
+        </div>
+
         <h1
           className="d-flex jc-center al-center color-primary"
           data-aos="fade-right"
           data-aos-delay="0"
-          
         >
           Sobre Mim
         </h1>
@@ -36,7 +54,7 @@ function AboutMe() {
         <div className="d-flex margin responsive">
           <img
             src={Personagem}
-            width="500px"
+            width="480px"
             alt="Personagem LJS"
             className="img-responsive"
             data-aos="fade-right"

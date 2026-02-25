@@ -68,3 +68,51 @@ h3 {
     width: 275px;
   }
 }
+
+/* Cole no final do seu Tecn.css */
+
+.tecn-pill-wrap {
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tecn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 204, 0, 0.1);
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  color: #ffcc00;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  border-radius: 50px;
+}
+
+.tecn-header-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tecn-divider-line {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.tecn-divider-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+#tecnologias {
+  scroll-margin-top: 50px;
+}

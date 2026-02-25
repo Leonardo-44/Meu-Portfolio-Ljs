@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   height: 100vh;
 }
 
@@ -117,6 +118,31 @@
   transform: scale(1.05);
 }
 
+/* GLOWS GLOBAIS */
+
+.section-glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.13;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-glow--left {
+  background: #ffcc00;
+  top: -60px;
+  left: -100px;
+}
+
+.section-glow--right {
+  background: #2222cc;
+  bottom: -60px;
+  right: -100px;
+}
+
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 1000px) {
@@ -124,6 +150,11 @@
     height: auto;
     margin: 0 0 15px 0;
     overflow: hidden;
+  }
+
+  /* Glows escondidos no mobile — o overflow: hidden cortaria de qualquer forma */
+  .section-glow {
+    display: none;
   }
 }
 
@@ -163,6 +194,7 @@
   h3 {
     font-size: 17px;
   }
+
   p {
     font-size: 10px;
   }

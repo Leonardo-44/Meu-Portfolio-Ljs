@@ -1,0 +1,351 @@
+/* ─── SECTION ──────────────────────────────────────────────── */
+.contato-section {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px 80px;
+}
+
+/* ─── HEADER ───────────────────────────────────────────────── */
+.contato-header {
+  gap: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.contato-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 204, 0, 0.1);
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  color: #ffcc00;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  border-radius: 50px;
+  margin-bottom: 4px;
+}
+
+.contato-sub {
+  font-size: 14px;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+/* ─── BODY LAYOUT ──────────────────────────────────────────── */
+.contato-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ─── CARDS SOCIAIS ────────────────────────────────────────── */
+.contato-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 280px;
+  flex: 1;
+}
+
+.contato-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #020046;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.contato-card:hover {
+  transform: translateX(6px);
+  border-color: rgba(255, 204, 0, 0.5);
+  box-shadow: 0 4px 24px rgba(255, 204, 0, 0.12);
+}
+
+.contato-card-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.contato-card:hover .contato-card-icon {
+  transform: scale(1.15);
+}
+
+.contato-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.contato-card-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+
+.contato-card-value {
+  font-size: 13px;
+}
+
+.contato-card-arrow {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.25);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contato-card:hover .contato-card-arrow {
+  color: #ffcc00;
+  transform: translateX(4px);
+}
+
+/* ─── DIVISOR VERTICAL ─────────────────────────────────────── */
+.contato-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 0;
+  align-self: stretch;
+}
+
+.contato-divider-line {
+  display: block;
+  flex: 1;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  min-height: 40px;
+}
+
+.contato-divider-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+  flex-shrink: 0;
+}
+
+/* ─── FORMULÁRIO ───────────────────────────────────────────── */
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+}
+
+.contato-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: 0.02em;
+}
+
+.contato-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contato-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contato-input {
+  background-color: #020046;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.contato-input::placeholder {
+  color: rgba(222, 218, 218, 0.4);
+}
+
+.contato-input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.1);
+}
+
+.contato-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* ─── BOTÃO ────────────────────────────────────────────────── */
+.contato-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s, transform 0.2s, border 0.4s;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.contato-btn:hover {
+  transform: scale(1.04);
+}
+
+.contato-btn--ok {
+  background-color: #1a7a3c !important;
+  color: #fff !important;
+  border-color: #1a7a3c !important;
+}
+
+.contato-btn-icon {
+  font-size: 16px;
+}
+
+/* ─── TABLET (max 1000px) ──────────────────────────────────── */
+@media screen and (max-width: 1000px) {
+  .contato-section {
+    padding: 50px 24px 70px;
+  }
+
+  .contato-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .contato-divider {
+    flex-direction: row;
+    align-self: auto;
+    width: 100%;
+    max-width: 480px;
+    padding: 0;
+  }
+
+  .contato-divider-line {
+    flex: 1;
+    width: auto;
+    height: 1px;
+    min-height: unset;
+  }
+
+  .contato-sociais,
+  .contato-form {
+    width: 100%;
+    max-width: 480px;
+    min-width: unset;
+  }
+}
+
+/* ─── MOBILE (max 500px) ───────────────────────────────────── */
+@media screen and (max-width: 500px) {
+  .contato-section {
+    padding: 40px 16px 60px;
+  }
+
+  .contato-header {
+    margin-bottom: 32px;
+  }
+
+  .contato-pill {
+    font-size: 10px;
+    padding: 4px 14px;
+  }
+
+  .contato-sub {
+    font-size: 12px;
+  }
+
+  .contato-sociais,
+  .contato-form {
+    max-width: 100%;
+  }
+
+  .contato-card {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .contato-card-icon {
+    font-size: 20px;
+  }
+
+  .contato-card-label {
+    font-size: 11px;
+  }
+
+  .contato-card-value {
+    font-size: 12px;
+  }
+
+  .contato-card-arrow {
+    font-size: 18px;
+  }
+
+  .contato-form-title {
+    font-size: 17px;
+  }
+
+  .contato-input {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .contato-btn {
+    font-size: 13px;
+    padding: 12px 20px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* ─── MOBILE PEQUENO (max 375px) ───────────────────────────── */
+@media screen and (max-width: 375px) {
+  .contato-section {
+    padding: 30px 12px 50px;
+  }
+
+  .contato-card {
+    padding: 10px 12px;
+  }
+
+  .contato-card-value {
+    font-size: 11px;
+  }
+
+  .contato-input {
+    font-size: 12px;
+  }
+}

@@ -14,6 +14,11 @@ function Presentation() {
   return (
     <>
       <section className="container reverse d-flex al-center jc-space-around">
+
+        {/* ── Glows decorativos ── */}
+        <div className="section-glow section-glow--left" />
+        <div className="section-glow section-glow--right" />
+
         <div className="fd-column jc-center al-center">
           <h1 className="h1-apres tertiary-color">
             <span className="fw-bold">Leonardo</span> Jermano

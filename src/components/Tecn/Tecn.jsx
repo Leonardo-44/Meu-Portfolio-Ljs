@@ -36,7 +36,26 @@ function Tecn() {
   }, []);
   return (
     <>
-      <section id="tecnologias" className="container d-flex fd-column jc-center ">
+      <section id="tecnologias" className="container d-flex fd-column jc-center">
+
+        {/* ── Glows decorativos ── */}
+        <div className="section-glow section-glow--left" />
+        <div className="section-glow section-glow--right" />
+
+        {/* ── Símbolo decorativo ── */}
+        <div
+          className="d-flex fd-column al-center txt-align tecn-pill-wrap"
+          data-aos="fade-down"
+          data-aos-delay="0"
+        >
+          <span className="tecn-pill">🛠️ Stack Tecnológico</span>
+          <div className="tecn-header-divider">
+            <span className="tecn-divider-line" />
+            <span className="tecn-divider-dot" />
+            <span className="tecn-divider-line" />
+          </div>
+        </div>
+
         <h1
           className="color-primary al-center d-flex jc-center"
           data-aos="fade-right"

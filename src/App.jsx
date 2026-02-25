@@ -5,6 +5,8 @@ import Tecn from "./components/Tecn/Tecn";
 import Presentation from "./components/Presentation/Presentation";
 import AboutMe from "./components/AboutMe/AboutMe";
 import ProjectsSection from "./components/Projects/ProjectsSection";
+ // import Formation from "./components/Formation/Formation"
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -24,10 +26,10 @@ function App() {
         <ProjectsSection/>
       </section>
       <section id="formacao">
-        {/* Coloque seu componente de Formação */}
+        {/*<Formation/>*/}
       </section>
       <section id="contato">
-        {/* COMPONENTE DE CONTATO */}
+        <Contact/>
       </section>
       <Footer />
     </div>

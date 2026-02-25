@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars } from "react-icons/fa"; // IMPORTAÇÃO ADICIONADA
+import { FaBars } from "react-icons/fa";
 import "../../App.css";
 import "../Header/Header.css";
 import Logo from "../../assets/Code.png";
@@ -7,13 +7,17 @@ import Logo from "../../assets/Code.png";
 function Header() {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setOpenMenu(false); // fecha o menu ao clicar num item
+    }
   };
 
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="d-flex cabecalho bg-gradient jc-space-around al-center gap-header nav-mobile">
+    <header className="d-flex cabecalho bg-gradient jc-space-around al-center gap-header">
+      {/* Lado esquerdo: logo + nome */}
       <div className="d-flex al-center gap">
         <img
           onClick={() => scrollTo("apresentacao")}
@@ -23,15 +27,9 @@ function Header() {
           className="bg-color logo pointer"
         />
         <h2 className="color-primary fw-bold">Leonardo Jermano</h2>
-
-        <button
-          className="btn-mobile bg-color"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
-          <FaBars className="d-flex jc-center al-center" />
-        </button>
       </div>
 
+      {/* Nav (desktop: inline | mobile: dropdown) */}
       <nav className={`nav-items ${openMenu ? "active" : ""}`}>
         <ul className="d-flex fw-bold gap">
           <li
@@ -54,19 +52,24 @@ function Header() {
           </li>
           <li
             className="color-primary li-config pointer"
-            onClick={() => scrollTo("formacao")}
-          >
-            Formação
-          </li>
-          <li
-            className="color-primary li-config pointer"
             onClick={() => scrollTo("contato")}
           >
             Contato
           </li>
         </ul>
       </nav>
+
+      {/* Botão hamburguer — só aparece no mobile via CSS */}
+      <button
+        className="btn-mobile bg-color"
+        onClick={() => setOpenMenu(!openMenu)}
+        aria-label="Abrir menu"
+        aria-expanded={openMenu}
+      >
+        <FaBars />
+      </button>
     </header>
   );
 }
+
 export default Header;

@@ -101,3 +101,47 @@
     width: 300px;
   }
 }
+
+/* Cole no final do seu AboutMe.css */
+
+.about-pill-wrap {
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.about-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 204, 0, 0.1);
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  color: #ffcc00;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  border-radius: 50px;
+}
+
+.about-header-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-divider-line {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.about-divider-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
