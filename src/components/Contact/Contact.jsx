@@ -35,8 +35,8 @@ const sociais = [
   {
     icon: <FaLinkedin />,
     label: "LinkedIn",
-    value: "linkedin.com/in/seuperfil",
-    href: "https://linkedin.com/in/seuperfil",
+    value: "linkedin.com/in/leonardo-jermano-34651b38b/",
+    href: "https://www.linkedin.com/in/leonardo-jermano-34651b38b/",
     color: "#0a66c2",
     delay: "400",
   },

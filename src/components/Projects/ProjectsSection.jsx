@@ -9,6 +9,8 @@ import ArtesManuais from "../../assets/Projects/ArtesManuais.png";
 import BlogResponsividade from "../../assets/Projects/BlogResponsividade.png";
 import Essenza from "../../assets/Projects/Essenza.png";
 
+import AgostinhoBarber from "../../assets/Projects/siteagostinho.png";
+
 const ProjectsSection = () => {
   useEffect(() => {
     AOS.init({
@@ -47,10 +49,22 @@ const ProjectsSection = () => {
       link: "https://trabalho-escolar-ochre.vercel.app/",
       github: "https://github.com/Leonardo-44/Trabalho-Escolar",
     },
+    {
+      title: "Agostinho Barber",
+      description:
+        "Uma plataforma premium para barbearia, focada em agendamentos e na experiência visual do cliente, unindo tradição e modernidade.",
+      image: AgostinhoBarber,
+      technologies: ["React","Node.Js", "Tailwind CSS", "JavaScript"],
+      link: "https://agostinho-barber-site.vercel.app/",
+      github: "https://github.com/Leonardo-44/Agostinho-Barber-Site",
+    },
   ];
 
   return (
-    <section id="projetos" className="projects-section d-flex fd-column al-center jc-center">
+    <section
+      id="projetos"
+      className="projects-section d-flex fd-column al-center jc-center"
+    >
       {/* Glows decorativos — classes do App.css */}
       <div className="section-glow section-glow--left" />
       <div className="section-glow section-glow--right" />
@@ -78,11 +92,7 @@ const ProjectsSection = () => {
       {/* Grid de cards */}
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            {...project}
-            index={index}
-          />
+          <ProjectCard key={index} {...project} index={index} />
         ))}
       </div>
     </section>
